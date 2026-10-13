@@ -1,22 +1,31 @@
-# VIOX Creative Portfolio
+# VIOX Creative Portfolio V1.1
 
-A free-first static portfolio built with HTML, CSS and JavaScript. No build tools or paid services required.
+Minimalist static portfolio: HTML, CSS, JavaScript. No npm, paid services, database, or build step required.
 
-## Preview locally
-Open `index.html` in a browser, or run `python -m http.server 8000` in this folder and visit http://localhost:8000.
+## What's new
+- Responsive, filterable project gallery and accessible project detail dialogs, including support for your own image galleries and external project links.
+- Social profiles and contact email configurable in `script.js` (hidden until real values are entered).
+- Résumé download links appear **only after** a real PDF exists at `resume/resume.pdf` and is served with a PDF content type.
+- Editable About copy, specialties, subtle scroll reveals and hover interactions with reduced-motion support.
+- Improved small-screen typography, spacing, keyboard focus and accessibility.
 
-## Customize before publishing
-1. In `script.js`, replace the placeholder projects with real descriptions and your own project visuals. Current thumbnails are CSS gradients, not actual portfolio images.
-2. Replace `hello@example.com` in `script.js` with your real contact email.
-3. Add your real social links to `profile.socials` in `script.js`.
-4. Add your own PDF file at `resume/resume.pdf` to activate the two resume download links. Until then, the links will return 404.
-5. Update the About text in `index.html` to reflect your experience.
-6. Check the website on mobile and desktop before publishing.
+## Personalize the site
+1. Edit `profile.email`, `profile.about`, `profile.availability`, and `profile.socials` near the top of `script.js`.
+2. Edit the `projects` array in `script.js`: `title`, `category` (`ai`, `design`, `digital`), `type`, `year`, `description`, `role`, `tools`, `art`, `color`, and optional `link`.
+3. Place your project image files in `assets/`, for example `assets/fashion-editorial.webp`. Set `image:'assets/fashion-editorial.webp'`. Add optional `images:['assets/look-2.webp','assets/look-3.webp']` for the detail gallery. Without images, the existing gradient tiles display automatically. Use optimized JPG/WebP files for speed.
+4. Add your **real** résumé PDF at `resume/resume.pdf`. This release does **not** include a fabricated résumé.
+5. Edit the specialties in `index.html` if needed. Replace illustrative project descriptions with your actual work before sharing publicly.
+6. Test the gallery filters, project dialogs, social URLs, PDF download and mobile layout after making changes.
 
-## Free deployment on Cloudflare Pages
-1. Create a GitHub repository and upload this site's files.
-2. In Cloudflare dashboard choose Workers & Pages > Create > Pages > Connect to Git.
-3. Select the repository, set production branch `main`, build command `exit 0`, and output directory `/` (or the repository root as required by the interface).
-4. Deploy. Cloudflare will issue a `*.pages.dev` URL after successful deployment.
+## Deploy to your existing GitHub + Cloudflare Pages
+1. **Extract the ZIP**. Open the `viox-creative-portfolio-v1.1` folder and select its contents (`index.html`, `styles.css`, `script.js`, `README.md`, plus any assets and resume files).
+2. In the existing `ALVILZON/viox-creative-portfolio` repository, upload these files **directly to the repository root** on branch `main`, replacing the old files. Do not upload the ZIP or create a nested website folder.
+3. Commit. Cloudflare Pages should deploy the new `main` commit automatically.
+4. Keep your existing Cloudflare Pages static site configuration: framework None, no build command, output directory `/` (root).
+5. Check the deployment status, then hard-refresh your existing `pages.dev` URL.
 
-No live site has been deployed from this package.
+## Local preview
+Run `python -m http.server 8000` from this folder and open `http://localhost:8000`. The PDF presence check requires an HTTP server; opening `index.html` directly as a file may hide the résumé link even if a PDF exists.
+
+## Notes
+The website and starter content are templates. Social URLs, email, resume and project photos are deliberately **not invented**. Google Fonts is optional and falls back to local system fonts when offline. No user analytics or tracking is included.
