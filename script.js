@@ -1,7 +1,7 @@
-/* VIOX V1.2 — EDIT YOUR CONTENT HERE. Do not put secrets in this public file. */
+/* VIOX V1.3 — EDIT YOUR CONTENT HERE. Do not put secrets in this public file. */
 const profile = {
   email: '', // Example: 'hello@yourdomain.com'; blank hides the email link.
-  about: 'VIOX means Visuals of 10. The X is the Roman numeral for ten — our symbol of 10/10 visual excellence. We bring that standard to AI imagery, creative direction, visual storytelling, and digital experiences.',
+  about: 'VIOX stands for Visual 10/10: V means Visual, IO represents 10 (I = 1, O = 0), and X is the Roman numeral for ten. Every visual deserves a perfect score. Our work brings that standard to AI imagery, creative direction, visual storytelling, and digital experiences.',
   availability: 'Open to creative collaborations and new ideas.',
   socials: [
     // {label:'Instagram', url:'https://www.instagram.com/YOUR_USERNAME/'},

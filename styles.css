@@ -38,3 +38,12 @@ dialog::backdrop { background:#000b; }
 :focus-visible { outline:2px solid #d7b77e!important; outline-offset:4px; }
 @media (max-width:640px) { .brand-divider {font-size:9px;letter-spacing:.08em} .hero h1 {font-size:clamp(3.6rem,13vw,6rem)} .nav {gap:10px} }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after {scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important} }
+
+/* VIOX Brand Identity V2.0 — official master design tokens */
+:root{--midnight:#0B0B0D;--champagne:#D9BE8A;--ivory:#F5F1E8;--white:#FFFFFF;--charcoal:#2A2A2C}
+body{background:var(--midnight);font-family:Inter,Arial,sans-serif}
+h1,h2,h3,.project-title,.overline,.eyebrow,.nav{font-family:Montserrat,Inter,Arial,sans-serif}
+.logo{display:inline-flex;align-items:center;text-decoration:none}.logo img{display:block;width:132px;height:auto;max-height:44px}
+.footer{display:flex;align-items:center;gap:14px}.footer img{flex:none;opacity:.9}
+:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}
+@media(max-width:600px){.logo img{width:102px}.footer{flex-wrap:wrap}.brand-divider{gap:12px}}
