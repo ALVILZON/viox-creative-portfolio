@@ -1,0 +1,1 @@
+Add optimized .webp or .jpg project images here and reference them in script.js.

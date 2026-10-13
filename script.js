@@ -1,7 +1,7 @@
-/* VIOX V1.1 — EDIT YOUR CONTENT HERE. Do not put secrets in this public file. */
+/* VIOX V1.2 — EDIT YOUR CONTENT HERE. Do not put secrets in this public file. */
 const profile = {
   email: '', // Example: 'hello@yourdomain.com'; blank hides the email link.
-  about: 'VIOX explores the intersection of artificial intelligence, visual direction, and digital experiences. Every project begins with an idea and becomes an opportunity to experiment, refine, and create.',
+  about: 'VIOX means Visuals of 10. The X is the Roman numeral for ten — our symbol of 10/10 visual excellence. We bring that standard to AI imagery, creative direction, visual storytelling, and digital experiences.',
   availability: 'Open to creative collaborations and new ideas.',
   socials: [
     // {label:'Instagram', url:'https://www.instagram.com/YOUR_USERNAME/'},
